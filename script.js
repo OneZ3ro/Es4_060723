@@ -122,7 +122,14 @@ console.log(
  Scrivi una funzione di nome "reverseString", il cui scopo è invertire una stringa fornita come parametro (es. "EPICODE" --> "EDOCIPE")
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+const reverseString = function (str) {
+  const mystr = str.split("");
+
+  mystr.splice(1, 5, mystr[5], mystr[4], mystr[3], mystr[2], mystr[1]);
+  mystr.join("");
+  return mystr;
+};
+console.log("Esercizio 7. EPICODE -->", reverseString("EPICODE"));
 
 //______________________________________________________________________________________________________________________________
 
