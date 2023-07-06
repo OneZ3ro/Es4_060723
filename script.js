@@ -62,7 +62,14 @@ console.log("Esercizio 3. Differenza Assoluta:", crazyDiff(39));
  se n è uguale a 400.
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+const boundary = function (n) {
+  if ((n >= 20 && n <= 100) || n === 400) {
+    return true;
+  } else {
+    return false;
+  }
+};
+console.log("Esercizio 4. Vero o falso:", boundary(401));
 
 //______________________________________________________________________________________________________________________________
 
