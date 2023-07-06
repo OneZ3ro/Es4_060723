@@ -98,7 +98,23 @@ console.log("Esercizio 5. La mia stringa:\n", epify("La mia stringa"));
  di 3 o di 7. (Suggerimento: usa l'operatore modulo)
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+const check3and7 = function (num) {
+  //   console.log(num);
+  if (num < 0) {
+    num = -num;
+  }
+  //   console.log(num);
+
+  if (num % 3 === 0 || num % 7 === 0) {
+    return "Si";
+  } else {
+    return "No";
+  }
+};
+console.log(
+  "Esercizio 6.\nIl numero è divisibile per 3 o per 7?",
+  check3and7(-49)
+);
 
 //______________________________________________________________________________________________________________________________
 
