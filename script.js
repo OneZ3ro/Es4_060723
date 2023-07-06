@@ -13,7 +13,7 @@ const area = function (l1, l2) {
   let result = l1 * l2;
   return result;
 };
-console.log("Esercizio 1. Area Rettangolo:", area(20, 30));
+console.log("Esercizio 1. Area Rettangolo:\n", area(20, 30));
 
 //______________________________________________________________________________________________________________________________
 
@@ -32,7 +32,7 @@ const crazySum = function (par1, par2) {
     return result;
   }
 };
-console.log("Esercizio 2. Somma:", crazySum(4, 4));
+console.log("Esercizio 2. Somma:\n", crazySum(4, 4));
 
 //______________________________________________________________________________________________________________________________
 
@@ -53,7 +53,7 @@ const crazyDiff = function (par1) {
     return result;
   }
 };
-console.log("Esercizio 3. Differenza Assoluta:", crazyDiff(39));
+console.log("Esercizio 3. Differenza Assoluta:\n", crazyDiff(39));
 
 //______________________________________________________________________________________________________________________________
 
@@ -69,7 +69,7 @@ const boundary = function (n) {
     return false;
   }
 };
-console.log("Esercizio 4. Vero o falso:", boundary(401));
+console.log("Esercizio 4. Vero o falso:\n", boundary(401));
 
 //______________________________________________________________________________________________________________________________
 
@@ -79,7 +79,17 @@ console.log("Esercizio 4. Vero o falso:", boundary(401));
  ritornare la stringa originale senza alterarla.
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+const epify = function (str) {
+  if (str.indexOf("EPICODE") > -1) {
+    return str;
+  } else {
+    let mystr = str.split(" ");
+    mystr.splice(0, 0, "EPICODE");
+    mystr = mystr.join(" ");
+    return mystr;
+  }
+};
+console.log("Esercizio 5. La mia stringa:\n", epify("La mia stringa"));
 
 //______________________________________________________________________________________________________________________________
 
