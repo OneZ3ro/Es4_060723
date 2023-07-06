@@ -13,7 +13,7 @@ const area = function (l1, l2) {
   let result = l1 * l2;
   return result;
 };
-console.log(area(20, 30));
+console.log("Esercizio 1. Area Rettangolo:", area(20, 30));
 
 //______________________________________________________________________________________________________________________________
 
@@ -32,7 +32,7 @@ const crazySum = function (par1, par2) {
     return result;
   }
 };
-console.log(crazySum(4, 4));
+console.log("Esercizio 2. Somma:", crazySum(4, 4));
 
 //______________________________________________________________________________________________________________________________
 
@@ -53,7 +53,7 @@ const crazyDiff = function (par1) {
     return result;
   }
 };
-console.log(crazyDiff(39));
+console.log("Esercizio 3. Differenza Assoluta:", crazyDiff(39));
 
 //______________________________________________________________________________________________________________________________
 
