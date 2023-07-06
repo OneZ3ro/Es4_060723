@@ -41,7 +41,19 @@ console.log(crazySum(4, 4));
  Deve inoltre tornare la differenza assoluta moltiplicata per tre qualora il numero fornito sia maggiore di 19.
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+const crazyDiff = function (par1) {
+  let result = par1 - 19;
+  if (result < 0) {
+    result = 19 - par1;
+    return result;
+  } else if (result >= 0 && result <= 19) {
+    return result;
+  } else {
+    result = result * 3;
+    return result;
+  }
+};
+console.log(crazyDiff(39));
 
 //______________________________________________________________________________________________________________________________
 
