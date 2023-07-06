@@ -19,11 +19,20 @@ console.log(area(20, 30));
 
 /* ESERCIZIO 2
  Scrivi una funzione di nome "crazySum", che riceve due numeri interi come parametri.
- La funzione deve ritornare la somma dei due parametri, ma se il valore dei due parametri è il medesimo deve invece tornare
- la loro somma moltiplicata per tre.
+ La funzione deve ritornare la somma dei due parametri, ma se il valore dei due parametri è il medesimo deve invece tornare la loro somma moltiplicata per tre.
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+const crazySum = function (par1, par2) {
+  let result = null;
+  if (par1 !== par2) {
+    result = par1 + par2;
+    return result;
+  } else {
+    result = (par1 + par2) * 3;
+    return result;
+  }
+};
+console.log(crazySum(4, 4));
 
 //______________________________________________________________________________________________________________________________
 
